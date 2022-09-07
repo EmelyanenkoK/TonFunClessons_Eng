@@ -18,10 +18,10 @@ FunC language is used to program smart contracts on TON blockchain. Contract log
 	() f(int i, cell c, slice s, builder b, tuple t, cont c) {
 	  ;; FunC has 7 atomic types: 
 	  ;; int - 257 bit signed integers,
-	  ;; cell - basic for TON opaque data structure whic contains up to 1023 bits and up to 4 references to other cells
-	  ;; slice and builder - special objects to read from and write to cells
+	  ;; cell - basic for TON opaque data structure which contains up to 1023 bits and up to 4 references to other cells,
+	  ;; slice and builder - special objects to read from and write to cells,
 	  ;; another flavor of cell which contains ready to execute TVM byte-code
-	  ;; tuple is an ordered collection of up to 255 components, having arbitrary value types, possibly distinct
+	  ;; tuple is an ordered collection of up to 255 components, having arbitrary value types, possibly distinct.
 	  ;; Finally tensor type (A,B, ...) is an ordered collection ready for mass assigning like: (int, int) a = (3, 5);
 	  ;; Special case of tensor type is the unit type ().
 	  ;; It represents that a function doesn't return any value, or has no arguments.
